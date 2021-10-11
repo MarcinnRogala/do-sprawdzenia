@@ -128,28 +128,43 @@ main {
     width: 100%;
     height: 54px;
 }
-.section__hero--input-delivery {
+.hero__button--dropdown {
     justify-content: center;
     align-items: center;
     width: 26%;
     height: 100%;
 }
-.section__hero--input-delivery input {
+.dropdown {
+    background-image: url("img/button-drp-down.png");
     font-family: 'UberMoveText', sans-serif;
     font-weight: 500;
     font-size: 16px;
     position: relative;
     border: none;
-    width: 54%;
-    height: 54px;
-}
-.section__hero--input-delivery img{
-    position: relative;
     cursor: pointer;
-    border: none;
-    width: 22%;
-    height: 56%;
+    width: 94%;
+    height: 56px;
 }
+.dropdown__list {  
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        list-style-type: none; 
+    }
+        li a {
+            padding: 0 20px;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            color: inherit;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+            
 .hero__button--search {
     align-items: center;
     width: 25%;
