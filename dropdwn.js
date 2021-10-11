@@ -1,6 +1,6 @@
 (function(){
     document.addEventListener('click', (e) => {
-        if(!e.target.classList.contains('dropdown')) {
+        if(!e.target.classList.contains('dropdown__btn')) {
             closeDropdowns();
             return;
         }
