@@ -1,71 +1,291 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
-    <title></title>
-</head>
-
-<header>
-    <nav>
-        <div class="section__holder--menu-top">
-            <div class="menu__button-top">
-            <img src="img\menu.png" alt="menu image">
-            </div>
-            <div class="section__holder--logo-top">
-            <img src= "img\logo.png" alt="logo image">
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber Eats | Food Delivery and Takeout</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="dropdown.js"></script>
+    <script src="header.js"></script>
+    <script src="main-menu.js"></script>
+    <link href="http://fonts.cdnfonts.com/css/uber-move-text" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="main-menu">
+      <div class="main-menu__content">
+        <div class="main-menu__top">
+          <a href="#" class="button button--secondary button--block sign-in" title="Zaloguj się">
+            Zaloguj się
+          </a>
+          <ul>
+            <li>
+              <a href="#">Utwórz konto firmowe</a>
+            </li>
+            <li>
+              <a href="#">Dodaj swoją restaurację</a>
+            </li>
+            <li>
+              <a href="#">Zarejestruj się, aby realizować dostawy</a>
+            </li>
+          </ul>
         </div>
-        <div class="button--Sign-in-top">
-            <button TYPE="button" onClick="parent.location.href='https://www.uber.com/en-PL/blog/eat/?_ga=2.6950706.1007768883.1632949090-23804058.1632949090'"><span><h6>Zaloguj się</h6></span></button>
+        <div class="main-menu__bottom">
+          <div class="app-cta">
+            <div class="app-cta__top">
+              <img src="img/uber-app-cta.svg" width="56" height="56" alt="Download app" loading="lazy">
+              <h4 class="app-cta__heading">
+                W aplikacji wybór jest jeszcze większy.
+              </h4>
+            </div>
+            <div class="app-cta__bottom">
+              <a href="#" class="button button--rounded app-cta__link">
+                <img src="img/icon-android.svg" width="16" height="16" alt="Android icon" loading="lazy"> Pobierz aplikację
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </nav>
-        <div class="section__hero--text">
-            <div class="hero__main--text">
-                <span>Zamów jedzenie pod drzwi</span>
-            </div>
+    <div id="page">
+      <header class="main-header">
+        <div class="main-header__left">
+          <button class="hamburger-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+          <a href="/" class="logo" title="UberEats">
+            <img src="img/logo.svg" width="146" height="24" alt="UberEats" />
+          </a>
         </div>
-        <div class="section__hero--input">
-            <div class="localization__hero--image">
-                <div class="hero--input-adres">
-                    <img src="img\lokalizacja.png" alt="localization image">
-                    <input placeholder="Wpisz adres dostawy" type="text" id="adres" name="adres" maxlength= "40">
-                </div>
-                <div class="hero__button--dropdown">
-                    <input class="dropdown__btn" placeholder="Dostarcz teraz" type="button" id="adres" name="adres" maxlength= "40">
-                    <ul class="dropdown__list">
-                        <li><a href="#">Dostarcz teraz</a></li>
-                        <li><a href="#">Zaplanuj na później</a></li>
-                    </ul>
-                </div>
-            
-            <div class="hero__button--search">
-                <button TYPE="button" onClick="parent.location.href='https://www.ubereats.com/pl/feed?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlN0YXN6JUMzJUIzdyUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpmWkxuSlQ1WVBVY1J0TWMtRmFwbDFJcyUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E1MC41NjI5OTc0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMjEuMTY1OTMwOSU3RA%3D%3D'">Wyszukaj restauracje
-                </button>
-            </div>
-        </div> 
+        <div class="div main-header__right">
+          <a href="#" class="button button--primary button--rounded sign-in" title="Zaloguj się"> Zaloguj się </a>
         </div>
-        <div class="section__hero--link-sign-in">
-            <span class="hero__link-sign-in">
-                <a href="https://auth.uber.com/login/?breeze_local_zone=dca11&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fcampaign%3Dsignin_universal_
-                link%26marketing_vistor_id%3Df6a6967f-f0a6-4914-811d-04bb64f8dfca%26redirect%3D%252Fpl&state=6GSAGz4qs0jik_
-                5UWne5wdlUC9ulICGUU1S75GXAErg%3D">Zaloguj się,</a>aby korzystać z ostatnich adresów 
+      </header>
+      <main class="main-content">
+        <section class="hero">
+          <img class="hero__bg" src="img/uber-eats-bg-1.jpg" srcset="img/uber-eats-bg-1.jpg, img/uber-eats-bg-mobile-1.jpg 400w" alt="background-1">
+          <div class="hero__content">
+            <h1 class="hero__heading">Zamów śniadania, lunche i obiady.</h1>
+            <form class="search" method="GET" action="#">
+              <div class="form-control">
+                <input type="search" class="search__input" placeholder="Wpisz adres dostawy" />
+              </div>
+              <div class="form-control">
+                <div class="dropdown search__delivery-time">
+                  <button type="button" class="dropdown__btn">Dostarcz teraz</button>
+                  <ul class="dropdown__list">
+                    <li><a href="#">Dostarcz teraz</a></li>
+                    <li><a href="#">Zaplanuj na później</a></li>
+                  </ul>
+                </div>
+              </div>
+              <button type="submit" class="submit button button--secondary button--block">Wyszukaj restauracje</button>
+              <p class="search__sign-in">
+                <a href="#" title="Zaloguj się">Zaloguj się</a>, aby korzystać z
+                ostatnich adresów
+              </p>
+            </form>
+          </div>
+        </section>
+        <section class="cta">
+          <a class="card" href="#" title="Zadbaj o posiłki dla pracowników">
+            <img
+              src="img/cta-img-1.svg"
+              alt="Zadbaj o posiłki dla pracowników"
+              class="card__img"
+            />
+            <span class="card__link"> Utwórz konto firmowe </span>
+          </a>
+          <a class="card" href="#" title="Ty zapewniasz menu, a my dostawę">
+            <img
+              src="img/cta-img-2.svg"
+              alt="Ty zapewniasz menu, a my dostawę"
+              class="card__img"
+            />
+            <h3 class="card__heading">Ty zapewniasz menu, a my dostawę</h3>
+            <span class="card__link"> Dodaj swoją restaurację </span>
+          </a>
+          <a class="card" href="#" title="Realizuj dostawy z Uber Eats">
+            <img
+              src="img/cta-img-3.svg"
+              alt="Realizuj dostawy z Uber Eats"
+              class="card__img"
+            />
+            <h3 class="card__heading">Realizuj dostawy z Uber Eats</h3>
+            <span class="card__link">
+              Zarejestruj się, aby realizować dostawy
             </span>
+          </a>
+        </section>
+        <section class="cities">
+          <h2>Miasta w pobliżu</h2>
+          <div class="cities__map"></div>
+          <div class="cities__list">
+            <ul>
+              <li><a href="#">Białystok</a></li>
+              <li><a href="#">Bydgoszcz</a></li>
+              <li><a href="#">Częstochowa</a></li>
+              <li><a href="#">Gorzów Wielkopolski</a></li>
+              <li><a href="#">Kalisz</a></li>
+              <li><a href="#">Kielce</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Koszalin</a></li>
+              <li><a href="#">Kraków</a></li>
+              <li><a href="#">Legnica</a></li>
+              <li><a href="#">Łódź</a></li>
+              <li><a href="#">Lublin</a></li>
+              <li><a href="#">Olsztyn</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Płock</a></li>
+              <li><a href="#">Poznań</a></li>
+              <li><a href="#">Radom</a></li>
+              <li><a href="#">Rzeszów</a></li>
+              <li><a href="#">Szczecin</a></li>
+              <li><a href="#">Toruń</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Trójmiasto</a></li>
+              <li><a href="#">Warszawa</a></li>
+              <li><a href="#">Włocławek</a></li>
+              <li><a href="#">Wrocław</a></li>
+              <li><a href="#">Zielona Góra</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="countries">
+          <ul>
+            <li><a href="#">Stany Zjednoczone</a></li>
+            <li><a href="#">Hiszpania</a></li>
+            <li><a href="#">Brazylia</a></li>
+            <li><a href="#">Meksyk</a></li>
+            <li><a href="#">Francja</a></li>
+            <li><a href="#">Japonia</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Kanada</a></li>
+            <li><a href="#">Australia</a></li>
+            <li><a href="#">Polska</a></li>
+            <li><a href="#">Wielka Brytania</a></li>
+            <li><a href="#">Włochy</a></li>
+            <li><a href="#">Portugalia</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Szwajcaria</a></li>
+            <li><a href="#">Chile</a></li>
+            <li><a href="#">Nowa Zelandia</a></li>
+            <li><a href="#">Tajwan (Republika Chińska)</a></li>
+            <li><a href="#">Republika Południowej Afryki</a></li>
+            <li><a href="#">Belgia</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Ekwador</a></li>
+            <li><a href="#">Irlandia</a></li>
+            <li><a href="#">Sri Lanka</a></li>
+            <li><a href="#">Szwecja</a></li>
+            <li><a href="#">Gwatemala</a></li>
+            <li><a href="#">Kostaryka</a></li>
+          </ul>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__top">
+          <div class="main-footer__info">
+            <a href="/" title="UberEats">
+              <img src="img/logo.svg" width="146" height="24" alt="UberEats" />
+            </a>
+            <ul class="payment-list">
+              <li>
+                <a href="#" title="Pobierz w App Store">
+                  <img
+                    src="img/app-store-download.svg"
+                    alt="Pobierz w App Store"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Pobierz w Google Play">
+                  <img
+                    src="img/google-play-download.png"
+                    alt="Pobierz w Google Play"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__links">
+            <ul>
+              <li><a href="#">Pomoc</a></li>
+              <li><a href="#">Dodaj swoją restaurację</a></li>
+              <li><a href="#">Zarejestruj się, aby realizować dostawy</a></li>
+              <li><a href="#">Utwórz konto firmowe</a></li>
+              <li><a href="#">Zaoszczędź na pierwszym zamówieniu</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Restauracje w pobliżu</a></li>
+              <li><a href="#">Pokaż wszystkie miasta</a></li>
+              <li><a href="#">Zobacz wszystkie kraje</a></li>
+              <li><a href="#">Przejdź na nasz blog</a></li>
+              <li><a href="#">Informacje o Uber Eats</a></li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="img/icon-lang.svg"
+                    width="16"
+                    height="16"
+                    alt="PL"
+                  />
+                  Polski</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="empty__hero--section">
+        <div class="main-footer__bottom">
+          <ul class="social-icons">
+            <li>
+              <a href="#" title="Facebook">
+                <img src="img/icon-fb.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Twitter">
+                <img src="img/icon-twitter.svg" alt="Twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Instagram">
+                <img src="img/icon-instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+          </ul>
+          <ul class="term-links">
+              <li>
+                  <a href="#">Polityka prywatności</a>
+              </li>
+              <li>
+                <a href="#">Warunki</a>
+            </li>
+            <li>
+                <a href="#">Cennik</a>
+            </li>
+            <li>
+                <a href="#">Nie sprzedawaj moich danych (Kalifornia)</a>
+            </li>
+          </ul>
+          <div class="copy">
+              <span>
+                Ta strona jest chroniona z użyciem kodu reCAPTCHA. Obowiązują dokumenty: Polityka prywatności oraz Warunki korzystania z usługi firmy Google.
+              </span>
+              <span>
+                © 2021 Uber Technologies Inc.
+              </span>
+          </div>
         </div>
-</header>
-
-<body>
-    <main>  
-            ciąg dalszy nastąpi...
-    </main>
-</body>
-
-<footer>
-    <div class="foter"> 
-        ciąg dalszy nastąpi...
+      </footer>
     </div>
-</footer>
+  </body>
+</html>
