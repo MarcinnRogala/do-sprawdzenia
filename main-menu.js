@@ -1,8 +1,8 @@
 (function(){
     document.addEventListener('DOMContentLoaded', () => {
-        const mainMenu = document.querySelector('.main-menu');
+        const mainMenu = document.querySelector('.section__main-menu-mid');
         const mainMenuContent = document.querySelector('.main-menu__content');
-        const menuButton = document.querySelector('.hamburger-menu');
+        const menuButton = document.querySelector('.hamburger--menu-top');
         
         if(!mainMenu || !mainMenuContent || !menuButton) {
             console.error('Cannot find main menu, main menu content or menu button node');
