@@ -339,6 +339,16 @@
     margin-right: 2%;
     height: 50vh;
     }
+    @media (max-width:1385px) {
+    .image--holder-mid{
+    margin-top: 2%;
+    margin-right: 4%;
+    }}
+    @media (max-width:992px) {
+    .image--holder-mid{
+    margin-top: 6%;
+    margin-right: 4%;
+    }}
     .image--holder-mid a {
     color:#000;
     font-size: 16px;
@@ -393,6 +403,14 @@
     width: 32%;
     height: 100%;
     }
+    @media (max-width:1385px) {
+    .right__section {
+    margin-bottom: 2.4%;
+    }}
+    @media (max-width:992px) {
+    .right__section {
+    margin: 0%;
+    }}
     @media (max-width:568px) {
     .right__section {
     height: 100%;
@@ -460,6 +478,14 @@
     width: 50%;
     height: 100%;
    }
+   @media (max-width:1385px) {
+    .right__content-mid {
+    margin-right: 2%;
+    }}
+   @media (max-width:992px) {
+    .right__content-mid {
+    margin-right: 2%;
+    }}
    .right__content-mid a {
     color: #000;
    }
@@ -474,14 +500,14 @@
     margin-right: 2%;
     height: 42vh;
     }
-    @media (max-width:992px) {
+    @media (max-width:1385px) {
     .main__content--map-mid img{
-    width: 100%;
+    width: 98%;
     height: 80%;
     }}
     @media (min-width:992px) {
     .main__content--map-mid img{
-    width: 100%;
+    width: 98%;
     height: 80%;
     }}
     @media (max-width:568px) {
@@ -494,25 +520,29 @@
     height: 32vh;
     gap: 300px;
     }
-    @media (max-width:992px) {
-    .cities__list-mid {
-    width: 100%;
-    height: 100%;
-    gap: 10%;
-    }}
-    @media (max-width:1325px) {
+    @media (max-width:1385px) {
     .cities__list-mid {
     width: 100%;
     height: 100%;
     gap: 15%;
     }}
+    @media (max-width:992px) {
+    .cities__list-mid {
+    width: 100%;
+    height: 100%;
+    gap: 8%;
+    }}
     @media (max-width:568px) {
     .cities__list-mid {
     width: 100%;
-    flex-wrap: wrap;
+    gap: 5px;
     font-size: 6px;
     height: 100%;
     }}        
+    @media (max-width:568px) {
+    .citys__list-right {
+    display: none;
+    }}
     .cities__list-mid li{
     list-style: none;
     } 
@@ -524,7 +554,7 @@
     }
     @media (max-width:992px) {
     .cities__list-mid a {
-    font-size: 10px;
+    font-size: 16px;
     }}
    .countries {
     display: flex;
@@ -565,13 +595,21 @@
     width:53%;
     height: 100%;
     }
+    @media (max-width:1385px) {
+    .countries__list-right {
+    margin-right: 6%;
+    }}
+    @media (max-width:568px) {
+    .countries__list-right {
+    display: none;
+    }}
     @media (max-width:992px) {
     .countries__list {
     width: 100%;
     height: 100%;
     gap: 5%;
     }}
-    @media (max-width:1325px) {
+    @media (max-width:1385px) {
     .countries__list {
     width: 100%;
     height: 100%;
@@ -580,8 +618,10 @@
     @media (max-width:568px) {
     .countries__list {
     width: 100%;
-    flex-wrap: wrap;
-    font-size: 6px;
+    justify-content: space-between;
+    margin-top: 20px;
+    line-height: 10px;
+    font-size: 8px;
     height: 100%;
     }}        
     .countries__list li{
@@ -595,7 +635,7 @@
     }
     @media (max-width:992px) {
     .countries__list a {
-    font-size: 10px;
+    font-size: 16px;
     }}
     .main-footer {
     display: flex;
@@ -679,6 +719,11 @@
     width: 54%;
     gap: 10%;
     }
+    @media (max-width:992px) {
+    .footer__links {
+    gap: 5px;
+    margin-right: 5%;
+    }}
     @media (max-width:568px) {
     .footer__links {
     gap: 0px;
@@ -754,6 +799,10 @@
     width: 80%;
     gap: 3.5%;
     }
+    @media (max-width:1385px) {
+    .term-links {
+    margin-right: 8%;
+    }}
     @media (max-width:568px) {
     .term-links {
     gap: 0px;
@@ -784,9 +833,14 @@
     gap: 3.5%;
     color: white;
     }
+    @media (max-width:1385px) {
+    .copy {
+    margin-right: 5%;
+    }}
     @media (max-width:992px) {
     .copy {
     font-size: 14px;
+    margin-right: 5%;
     line-height: 15px;
     }}
     @media (max-width:568px) {
@@ -797,6 +851,7 @@
     flex-direction: column;
     }}
     .end-nav {
+    display: flex;
     background-color: #000;
     height: 10vh;    
     }
